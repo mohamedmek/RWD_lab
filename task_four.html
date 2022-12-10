@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task four</title>
+    <style>
+        .item1{grid-area: side;}
+        .item2{grid-area: header;}
+        .item3{grid-area: middel;}
+        .item4{grid-area: bar;}
+        .item5{grid-area: footer;}
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+                                'side side header header header header'
+                                'side side header header header header'
+                                'side side middel middel bar bar'
+                                'side side middel middel bar bar'
+                                'footer footer footer footer bar bar'
+                                'footer footer footer footer bar bar';
+            gap: 10px;
+            padding: 10px;
+            width: 100vmin;
+            height: 100vmin;
+            margin: 30px auto;
+
+            transform: scale(0.75) rotateZ(25deg);
+            
+
+        
+        }
+        .grid-container>div{
+            background-color: rgb(51, 50, 50);
+            color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(49, 102, 216);">
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>
