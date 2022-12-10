@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_One</title>
+    <style>
+        .nav_bar{
+            display: flex;
+            background-color: #333;
+            justify-content: space-evenly;
+            
+
+        }
+        .nav_bar > a{
+            color: aliceblue;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav_bar > a:hover{
+            background-color: rgb(224, 219, 212);
+            color: #333;
+        }
+        .container{
+            display: flex;
+            text-align: center;
+            
+        }
+        .container > table{
+            border-style: solid;                
+            margin: 10px;
+            width: 50%;
+            min-height: 300px;
+
+
+        }
+        .footer{
+            background-color: bisque;
+            height: 22px;
+        }
+        .tstyle {
+                height: 100%;
+                width:100%;
+                border-collapse: collapse;
+            }
+        @media (max-width: 700px) {
+            .container , .nav_bar{
+                flex-wrap: wrap;
+                flex-direction: column;                
+            }
+            .container > table{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <!-- <div class="container">
+        <div><p>This is a flex item</p></div>
+        <div class="footer"><p>footer</p></div>
+    </div>
+    <div class="container">
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam nam aliquam sequi iusto? Ipsum, excepturi. Reprehenderit, quod. Recusandae, molestiae! Soluta illo, voluptates sequi consectetur dolorum voluptas quam reprehenderit dolorem.</p></div>
+        <div class="footer"><p>footer</p></div>
+
+    </div> -->
+    <div class="container">
+        <table class="tstyle">
+            <tr>
+                <td valign="top"><p>This is a flex item</p></td>
+            </tr>
+            <tr>
+                <td valign="bottom" class="footer"><p>footer</p></td>
+            </tr>
+        </table>
+        <table class="tstyle">
+            <tr>
+                <td valign="top"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum distinctio ad fugiat quia magnam omnis, amet quae architecto adipisci, repellendus consequuntur dignissimos velit rem repudiandae aspernatur. Cum, iste. Quod, praesentium.</p></td>
+            </tr>
+            <tr>
+                <td valign="bottom" class="footer"><p>footer</p></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
